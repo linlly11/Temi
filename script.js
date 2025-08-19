@@ -19,7 +19,7 @@ const questions = [
 let currentQ = 0;
 let score = 0;
 let timer;
-let timeLeft = 5;
+let timeLeft = 10;
 
 const questionText = document.getElementById("question-text");
 const optionsEl = document.getElementById("options");
@@ -66,7 +66,7 @@ function nextQuestion(){
 
 function resetTimer(){
   clearInterval(timer);
-  timeLeft = 5;
+  timeLeft = 10;
   timeEl.textContent = timeLeft;
   timer = setInterval(()=>{
     timeLeft--;
